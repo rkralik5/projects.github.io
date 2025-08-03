@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for responsive design and SEO optimization -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[PAGE DESCRIPTION] - Robert Kralik Portfolio">
+    <meta name="author" content="Robert Kralik">
+    <title>[PAGE TITLE] - Robert Kralik</title>
+    
+    <!-- External CSS file for consistent styling across all pages -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Optional: Page-specific CSS can be added here -->
+    <style>
+        /* Add any page-specific styles here if needed */
+        /* Example:
+        .page-specific-class {
+            background-color: var(--light-green);
+        }
+        */
+    </style>
+</head>
+<body>
+    <!-- HEADER SECTION - Fixed navigation bar -->
+    <header>
+        <nav>
+            <!-- Logo/Brand link - always links back to home -->
+            <a href="index.html" class="logo">Robert Kralik</a>
+            
+            <!-- Mobile menu toggle button -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Add more navigation items as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main>
+        <!-- PAGE HERO SECTION (Optional) -->
+        <section class="hero">
+            <h1>[PAGE MAIN HEADING]</h1>
+            <p>[PAGE DESCRIPTION OR SUBTITLE]</p>
+            <!-- Optional: Add a call-to-action button -->
+            <!-- <a href="#section" class="cta-button">[BUTTON TEXT]</a> -->
+        </section>
+
+        <!-- MAIN CONTENT SECTION -->
+        <section class="section">
+            <!-- Use content-card class for boxed content -->
+            <div class="content-card">
+                <h2>[SECTION HEADING]</h2>
+                <p>
+                    [Your content goes here. Use the content-card class for nice styling 
+                    that matches the rest of your site.]
+                </p>
+                
+                <!-- Example of using utility classes -->
+                <div class="text-center mt-2">
+                    <a href="#" class="btn">Primary Button</a>
+                    <a href="#" class="btn btn-secondary">Secondary Button</a>
+                </div>
+            </div>
+
+            <!-- Another content section -->
+            <div class="content-card">
+                <h2>[ANOTHER SECTION]</h2>
+                <p>
+                    You can add as many content cards as needed. Each will have consistent 
+                    spacing and styling.
+                </p>
+                
+                <!-- Example of a grid layout using existing styles -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <h3>[ITEM 1]</h3>
+                        <p>Content for item 1</p>
+                    </div>
+                    <div>
+                        <h3>[ITEM 2]</h3>
+                        <p>Content for item 2</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example of using project-card styling for other content -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x200/8fbc8f/2d5016?text=Image+1" alt="Example Image">
+                    <div class="project-card-content">
+                        <h3>[CARD TITLE]</h3>
+                        <p>[Card description goes here]</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Link 1</a>
+                            <a href="#" class="project-link">Link 2</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION - Contact information and social links -->
+    <footer id="contact" class="scroll-offset">
+        <div class="footer-content">
+            <h3>Get In Touch</h3>
+            <p>I'm always interested in new opportunities and collaborations.</p>
+            
+            <!-- Social links container -->
+            <div class="social-links">
+                <a href="mailto:your.email@example.com">📧 Email</a>
+                <a href="https://orcid.org/your-orcid-id" target="_blank">🔬 ORCID</a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/rkralik5" target="_blank">💻 GitHub</a>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+                © 2025 Robert Kralik. Built with HTML, CSS, and JavaScript.
+            </p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file for interactive functionality -->
+    <script src="scripts.js"></script>
+    
+    <!-- Optional: Page-specific JavaScript can be added here -->
+    <script>
+        // Add any page-specific JavaScript here if needed
+        // Example:
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     console.log('Page-specific JavaScript loaded');
+        // });
+    </script>
+</body>
+</html>
