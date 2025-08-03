@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for responsive design and SEO optimization -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Robert Kralik - Front-end Developer with expertise in HTML, CSS, and JavaScript">
+    <meta name="author" content="Robert Kralik">
+    <title>About Me - Robert Kralik</title>
+    
+    <!-- External CSS file for consistent styling across all pages -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER SECTION - Fixed navigation bar -->
+    <header>
+        <nav>
+            <!-- Logo/Brand link - always links back to home -->
+            <a href="index.html" class="logo">Robert Kralik</a>
+            
+            <!-- Mobile menu toggle button -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li class="dropdown">
+                    <a href="Projects/index.html">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="Projects/javascript-tutorial/index.html">JavaScript Tutorial</a>
+                        <a href="#" class="coming-soon">More Coming Soon...</a>
+                    </div>
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main>
+        <!-- PAGE HERO SECTION -->
+        <section class="hero">
+            <h1>About Me</h1>
+            <p>Learn more about my journey as a front-end developer and my passion for creating amazing web experiences.</p>
+        </section>
+
+        <!-- DETAILED ABOUT SECTION -->
+        <section class="section">
+            <div class="content-card">
+                <h2>My Story</h2>
+                <p>
+                    Welcome! I'm Robert Kralik, a passionate front-end developer with a deep love for creating 
+                    beautiful, functional, and user-friendly web experiences. My journey into web development 
+                    began with curiosity about how websites work and has evolved into a comprehensive skill set 
+                    that spans modern web technologies.
+                </p>
+                <p>
+                    I specialize in HTML5, CSS3, and JavaScript, with a particular focus on responsive design 
+                    and clean, maintainable code. I believe that great web development combines technical 
+                    excellence with creative problem-solving to deliver experiences that users love.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h2>My Skills</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <h3>Frontend Development</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">HTML5 & Semantic Markup</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">CSS3 & Modern Layout Techniques</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">JavaScript ES6+</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">Responsive Web Design</li>
+                            <li style="padding: 0.5rem 0;">Cross-browser Compatibility</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Design & UX</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">User Interface Design</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">User Experience Principles</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">Accessibility Standards</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">Performance Optimization</li>
+                            <li style="padding: 0.5rem 0;">SEO Best Practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>My Approach</h2>
+                <p>
+                    I believe in writing clean, semantic code that not only works well but is also easy to 
+                    understand and maintain. My development philosophy centers around:
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                    <div style="text-align: center; padding: 1.5rem; background-color: var(--pale-green); border-radius: 10px;">
+                        <h3 style="color: var(--primary-green); margin-bottom: 1rem;">🎯 User-Centered</h3>
+                        <p>Every decision is made with the end user in mind, ensuring intuitive and accessible experiences.</p>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background-color: var(--pale-green); border-radius: 10px;">
+                        <h3 style="color: var(--primary-green); margin-bottom: 1rem;">🔧 Clean Code</h3>
+                        <p>Writing maintainable, well-documented code that follows industry best practices and standards.</p>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background-color: var(--pale-green); border-radius: 10px;">
+                        <h3 style="color: var(--primary-green); margin-bottom: 1rem;">📱 Responsive</h3>
+                        <p>Creating websites that work beautifully across all devices and screen sizes.</p>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background-color: var(--pale-green); border-radius: 10px;">
+                        <h3 style="color: var(--primary-green); margin-bottom: 1rem;">⚡ Performance</h3>
+                        <p>Optimizing for speed and efficiency without compromising on functionality or design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>What I'm Learning</h2>
+                <p>
+                    The web development landscape is constantly evolving, and I'm committed to continuous 
+                    learning. Currently, I'm exploring:
+                </p>
+                <ul style="margin-top: 1rem; margin-left: 2rem;">
+                    <li>Advanced CSS techniques like CSS Grid and Custom Properties</li>
+                    <li>Modern JavaScript frameworks and libraries</li>
+                    <li>Web accessibility standards and implementation</li>
+                    <li>Performance optimization techniques</li>
+                    <li>Progressive Web App development</li>
+                </ul>
+            </div>
+
+            <div class="content-card text-center">
+                <h2>Let's Work Together</h2>
+                <p>
+                    I'm always excited to work on new projects and collaborate with fellow developers, 
+                    designers, and businesses. Whether you need a complete website, help with a specific 
+                    feature, or just want to discuss web development, I'd love to hear from you!
+                </p>
+                <div style="margin-top: 2rem;">
+                    <a href="index.html#contact" class="btn">Get In Touch</a>
+                    <a href="index.html#projects" class="btn btn-secondary" style="margin-left: 1rem;">View My Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION - Contact information and social links -->
+    <footer id="contact" class="scroll-offset">
+        <div class="footer-content">
+            <h3>Get In Touch</h3>
+            <p>I'm always interested in new opportunities and collaborations.</p>
+            
+            <!-- Social links container -->
+            <div class="social-links">
+                <a href="mailto:your.email@example.com">📧 Email</a>
+                <a href="https://orcid.org/your-orcid-id" target="_blank">🔬 ORCID</a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/rkralik5" target="_blank">💻 GitHub</a>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+                © 2025 Robert Kralik. Built with HTML, CSS, and JavaScript.
+            </p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file for interactive functionality -->
+    <script src="scripts.js"></script>
+</body>
+</html>
