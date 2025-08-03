@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for responsive design and SEO optimization -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robert Kralik - My Web Development Projects Portfolio">
+    <meta name="author" content="Robert Kralik">
+    <title>My Projects - Robert Kralik</title>
+    
+    <!-- External CSS file for consistent styling across all pages -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- HEADER SECTION - Fixed navigation bar -->
+    <header>
+        <nav>
+            <!-- Logo/Brand link - always links back to home -->
+            <a href="../index.html" class="logo">Robert Kralik</a>
+            
+            <!-- Mobile menu toggle button -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="active">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="javascript-tutorial/index.html">JavaScript Tutorial</a>
+                        <a href="#" class="coming-soon">More Coming Soon...</a>
+                    </div>
+                </li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main>
+        <!-- PAGE HERO SECTION -->
+        <section class="hero">
+            <h1>My Projects</h1>
+            <p>Developing my front-end web development skills through hands-on projects and practical learning experiences.</p>
+        </section>
+
+        <!-- PROJECTS OVERVIEW SECTION -->
+        <section class="section">
+            <div class="content-card">
+                <h2>About My Projects</h2>
+                <p>
+                    As I develop my front-end web development skills, I'm building a collection of projects that 
+                    demonstrate my growing expertise in HTML, CSS, and JavaScript. Each project represents a 
+                    different aspect of web development and showcases specific techniques and concepts.
+                </p>
+                <p>
+                    My approach focuses on creating clean, responsive, and user-friendly web experiences while 
+                    following modern web development best practices. These projects serve both as learning 
+                    exercises and as demonstrations of my capabilities to potential employers and collaborators.
+                </p>
+            </div>
+
+            <!-- PROJECTS GRID -->
+            <div class="projects-grid">
+                <!-- Project 1: JavaScript Tutorial -->
+                <div class="project-card" onclick="window.location.href='javascript-tutorial/index.html'">
+                    <img src="https://via.placeholder.com/400x200/8fbc8f/2d5016?text=JavaScript+Tutorial" alt="JavaScript Tutorial Project">
+                    <div class="project-card-content">
+                        <h3>JavaScript Tutorial Series</h3>
+                        <p>
+                            A comprehensive interactive JavaScript tutorial covering fundamental concepts including 
+                            variables, data types, functions, loops, and practical examples. Features hands-on 
+                            exercises and clear explanations perfect for beginners.
+                        </p>
+                        <div class="project-details">
+                            <h4>Technologies Used:</h4>
+                            <ul>
+                                <li>HTML5 for structure</li>
+                                <li>CSS3 for styling and layout</li>
+                                <li>Vanilla JavaScript for interactivity</li>
+                                <li>Browser Developer Console integration</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript-tutorial/index.html" class="project-link">View Project</a>
+                            <a href="https://github.com/rkralik5/projects.github.io/tree/main/Javascript_tutorial" class="project-link" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future projects -->
+                <div class="project-card coming-soon-card">
+                    <img src="https://via.placeholder.com/400x200/8fbc8f/2d5016?text=Coming+Soon" alt="Upcoming Project">
+                    <div class="project-card-content">
+                        <h3>More Projects Coming Soon...</h3>
+                        <p>
+                            I'm actively working on new projects that will demonstrate additional aspects of 
+                            front-end development. Stay tuned for updates!
+                        </p>
+                        <div class="project-details">
+                            <h4>Planned Projects:</h4>
+                            <ul>
+                                <li>Responsive CSS Grid Gallery</li>
+                                <li>Interactive Data Visualization</li>
+                                <li>Progressive Web Application</li>
+                                <li>API Integration Project</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link disabled">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SHOWCASE SECTION -->
+        <section class="section">
+            <div class="content-card">
+                <h2>Skills Demonstrated</h2>
+                <p>Through these projects, I'm developing and showcasing the following web development skills:</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <h3>Frontend Technologies</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">✅ HTML5 & Semantic Markup</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">✅ CSS3 & Modern Layout</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">✅ JavaScript ES6+</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">✅ Responsive Design</li>
+                            <li style="padding: 0.5rem 0;">🔄 Framework Integration</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Development Practices</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">✅ Clean Code Principles</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">✅ Git Version Control</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">✅ Documentation</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-green);">✅ Cross-browser Testing</li>
+                            <li style="padding: 0.5rem 0;">🔄 Performance Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION - Contact information and social links -->
+    <footer id="contact" class="scroll-offset">
+        <div class="footer-content">
+            <h3>Get In Touch</h3>
+            
+            <!-- Social links container -->
+            <div class="social-links">
+                <a href="mailto:robert.kralik@kcl.ac.uk">📧 robert.kralik@kcl.ac.uk</a>
+                <a href="https://www.linkedin.com/in/robert-kralik-neutrinopostdoc/" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px; filter: brightness(0) invert(1);">
+                    LinkedIn
+                </a>
+                <a href="https://orcid.org/0000-0001-7557-5085" target="_blank">
+                    <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px;">
+                    ORCID
+                </a>
+                <a href="https://github.com/rkralik5" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px; filter: brightness(0) invert(1);">
+                    GitHub
+                </a>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+                © 2025 Robert Kralik. Built with HTML, CSS, and JavaScript.
+            </p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file for interactive functionality -->
+    <script src="../scripts.js"></script>
+    
+    <!-- Page-specific JavaScript for project cards -->
+    <script>
+        // Add click functionality to project cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectCards = document.querySelectorAll('.project-card:not(.coming-soon-card)');
+            
+            projectCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // Prevent navigation if clicking on links
+                    if (e.target.tagName === 'A') {
+                        return;
+                    }
+                    
+                    // Get the href from the first project link
+                    const projectLink = card.querySelector('.project-link[href]');
+                    if (projectLink) {
+                        window.location.href = projectLink.href;
+                    }
+                });
+                
+                // Add hover cursor to indicate clickability
+                card.style.cursor = 'pointer';
+            });
+        });
+    </script>
+</body>
+</html>
