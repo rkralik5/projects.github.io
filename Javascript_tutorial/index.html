@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Learning Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #005999;
+        }
+        .info {
+            background-color: #e7f3ff;
+            border-left: 4px solid #007acc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 JavaScript Learning Examples</h1>
+        
+        <div class="info">
+            <strong>Instructions:</strong>
+            <ol>
+                <li>Open your browser's Developer Console (F12 or Ctrl+Shift+I)</li>
+                <li>Click any button below to run that example</li>
+                <li>Watch the output in the console</li>
+                <li>Study the code in the corresponding .js files</li>
+            </ol>
+        </div>
+
+        <h2>📚 Available Examples:</h2>
+        
+        <button onclick="runExample(1)">1. Variables & Data Types</button>
+        <button onclick="runExample(2)">2. Basic Operations</button>
+        <button onclick="runExample(3)">3. Conditional Statements</button>
+        <button onclick="runExample(4)">4. Loops</button>
+        <button onclick="runExample(5)">5. Functions</button>
+        <button onclick="runExample(6)">6. Arrays & Objects</button>
+        <button onclick="runExample(7)">7. Practical Examples</button>
+        
+        <br><br>
+        <button onclick="clearConsole()">🧹 Clear Console</button>
+        
+        <h2>📋 Learning Path:</h2>
+        <p>Start with example 1 and work your way through to example 7. Each builds on the previous concepts.</p>
+        
+        <h2>💡 Tips:</h2>
+        <ul>
+            <li>Keep the console open to see all output</li>
+            <li>Try modifying the code in the .js files</li>
+            <li>Experiment with your own examples</li>
+            <li>Don't rush - take time to understand each concept</li>
+        </ul>
+    </div>
+
+    <script>
+        function clearConsole() {
+            console.clear();
+            console.log("Console cleared! Click any example button to start learning.");
+        }
+        
+        function runExample(num) {
+            console.clear();
+            console.log(`%c🎯 Running Example ${num}`, 'color: #007acc; font-size: 16px; font-weight: bold;');
+            console.log('=' * 50);
+            
+            // Load and execute the corresponding script
+            const script = document.createElement('script');
+            script.src = `0${num}-${getFileName(num)}.js`;
+            script.onload = () => {
+                console.log(`%c✅ Example ${num} completed!`, 'color: green; font-weight: bold;');
+                console.log('Study the code in the .js file to understand how it works.');
+            };
+            script.onerror = () => {
+                console.error(`❌ Could not load example ${num}. Make sure the file exists.`);
+            };
+            
+            // Remove any previous script
+            const existingScript = document.querySelector('script[data-example]');
+            if (existingScript) {
+                existingScript.remove();
+            }
+            
+            script.setAttribute('data-example', num);
+            document.head.appendChild(script);
+        }
+        
+        function getFileName(num) {
+            const fileNames = [
+                '', // 0 - placeholder
+                'variables-and-data-types',
+                'basic-operations',
+                'conditional-statements',
+                'loops',
+                'functions',
+                'arrays-and-objects',
+                'practical-examples'
+            ];
+            return fileNames[num];
+        }
+        
+        // Welcome message
+        console.log('%c🎉 Welcome to JavaScript Learning!', 'color: #007acc; font-size: 18px; font-weight: bold;');
+        console.log('Open this console and click the buttons above to run examples.');
+        console.log('Each example will show you different JavaScript concepts.');
+    </script>
+</body>
+</html>
