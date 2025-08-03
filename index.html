@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for responsive design and SEO optimization -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robert Kralik Portfolio">
+    <meta name="author" content="Robert Kralik">
+    <title>Robert Kralik - Portfolio</title>
+    
+    <!-- External CSS file for consistent styling across all pages -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER SECTION - Fixed navigation bar -->
+    <header>
+        <nav>
+            <!-- Logo/Brand link -->
+            <a href="#home" class="logo">Robert Kralik</a>
+            
+            <!-- Mobile menu toggle button -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li class="dropdown">
+                    <a href="Projects/index.html">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="Projects/javascript-tutorial/index.html">JavaScript Tutorial</a>
+                        <a href="#" class="coming-soon">More Coming Soon...</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main>
+        <!-- HERO SECTION - Landing area with introduction -->
+        <section id="home" class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm Robert Kralik, experimental neutrino physicist working on T2K, Super-K and Hyper-K experiments. My main expertise include statistical analysis of large data sets, calibration of light-detection systems, simulation and detector operations. I'm working on developing my skill in web-page design working on projects using HTML, CSS, and JavaScript. Explore my work below!</p>
+            <a href="#projects" class="cta-button">View My Projects</a>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <!--
+        <section id="about" class="section scroll-offset">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hello! I'm Robert Kralik, a dedicated front-end developer with a passion for creating beautiful, 
+                    functional, and user-friendly web experiences. I specialize in modern web technologies including 
+                    HTML5, CSS3, and JavaScript, with a focus on responsive design and clean, maintainable code.
+                </p>
+                <p>
+                    My journey in web development began with a curiosity about how websites work, and has evolved 
+                    into a comprehensive skill set that includes modern CSS frameworks, JavaScript libraries, and 
+                    best practices in web accessibility and performance optimization.
+                </p>
+                <p>
+                    I'm constantly learning and experimenting with new technologies and techniques to stay current 
+                    with the rapidly evolving web development landscape. This portfolio showcases some of my work 
+                    and demonstrates my commitment to quality and attention to detail.
+                </p>
+            </div>
+        </section>
+        -->
+    </main>
+
+    <!-- FOOTER SECTION - Contact information and social links -->
+    <footer id="contact" class="scroll-offset">
+        <div class="footer-content">
+            <h3>Get In Touch</h3>
+            
+            <!-- Social links container -->
+            <div class="social-links">
+                <a href="mailto:robert.kralik@kcl.ac.uk">📧 robert.kralik@kcl.ac.uk</a>
+                <a href="https://www.linkedin.com/in/robert-kralik-neutrinopostdoc/" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px; filter: brightness(0) invert(1);">
+                    LinkedIn
+                </a>
+                <a href="https://orcid.org/0000-0001-7557-5085" target="_blank">
+                    <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px;">
+                    ORCID
+                </a>
+                <a href="https://github.com/rkralik5" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px; filter: brightness(0) invert(1);">
+                    GitHub
+                </a>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+                © 2025 Robert Kralik. Built with HTML, CSS, and JavaScript.
+            </p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file for interactive functionality -->
+    <script src="scripts.js"></script>
+</body>
+</html>
